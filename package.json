@@ -1,0 +1,20 @@
+{
+  "name": "nock-project",
+  "version": "1.0.0",
+  "description": "This is a demo project for mocking a unit test usin nock",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "nock": "^10.0.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "moch": "0.0.1",
+    "mocha": "^5.2.0"
+  }
+}

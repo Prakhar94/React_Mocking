@@ -12,17 +12,17 @@ describe('First test', ()=>{
 describe('Get Mocked user info', ()=>{
     beforeEach(() => {
     nock('https://api.github.com')
-      .get('/users/Prakhar94')
+      .get('/users/[xxxx]')
       .reply(200, mock_response);
   });
     it('Get user name ', ()=>{
-        return getProject('Prakhar94')
+        return getProject('[xxxx]')
         .then(response =>{
             console.log(response.data)
             // console.log(typeof response)
             expect(typeof response ).to.equal('object');
-            expect(response.login).to.equal('Prakhar94')
-            expect(response.id).to.equal('20164583')
+            expect(response.login).to.equal('[xxxx]')
+            expect(response.id).to.equal('[yyyy]')
             expect(response.type).to.equal('User')
         })
         .catch( error =>{
